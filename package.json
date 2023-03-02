@@ -1,8 +1,20 @@
-{
-  "dependencies": {
-    "express": "^4.18.2"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.20"
-  }
 
+{
+  "name": "mymongo",
+  "version": "1.0.0",
+      "description": "",
+      "main": "server.js",
+      "scripts": {
+        "dev": "nodemon server.js"
+      },
+      "author": "",
+      "license": "ISC",
+      "dependencies": {
+        "body-parser": "^1.20.2",
+        "express": "^4.18.2",
+        "mongodb": "^5.1.0"
+      },
+      "devDependencies": {
+        "nodemon": "^2.0.20"
+      }
+    }
