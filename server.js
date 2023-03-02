@@ -18,7 +18,7 @@ app.post('/quotes', (req, res) => {
 })
 const express = require('express')
 const bodyParser= require('body-parser')
-const app = express()
+
 
 pp.use(bodyParser.urlencoded({ extended: true }))
 
