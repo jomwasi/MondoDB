@@ -13,6 +13,19 @@ app.listen(3000, function() {
   app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html')
 })
-  app.post('/quotes', (req, res) => {
+app.post('/quotes', (req, res) => {
   console.log('Hellooooooooooooooooo!')
+})
+const express = require('express')
+const bodyParser= require('body-parser')
+const app = express()
+
+pp.use(bodyParser.urlencoded({ extended: true }))
+
+// All your handlers here...
+app.get('/', (req, res) => {/*...*/})
+app.post('/quotes', (req, res) => {/*...*/})
+
+app.post('/quotes', (req, res) => {
+  console.log(req.body)
 })
